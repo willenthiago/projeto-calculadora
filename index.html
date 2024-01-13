@@ -10,19 +10,18 @@
         <h1>Calculadora Básica</h1>
     </header>
     <main>
-        <section>
+        <section class="calculadora">
             <div id="idDis">
                 <p>
                     <input type="number" name="num" id="idNum" placeholder="0">
                 </p>
             </div>
             <div id="idBtn">
-                <input type="button" value="+">
-                <input type="button" value="-">
-                <input type="button" value="*">
-                <input type="button" value="/">
-                <input type="button" value="=">
-                <input type="reset" value="AC">
+                <input class="btn" type="button" value="+" onclick="operador()">
+                <input class="btn" type="button" value="-" onclick="operador()">
+                <input class="btn" type="button" value="x" onclick="operador()">
+                <input class="btn" type="button" value="/" onclick="operador()">
+                <input class="btn" type="button" value="=" onclick="operador()">
             </div>
         </section>
     </main>
