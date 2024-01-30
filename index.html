@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./estilos/styles.css">
     <link rel="stylesheet" href="./estilos/media-queries.css">
 </head>
-<body>
+<body onload="placeHolder()">
     <header>
         <h1>Calculadora</h1>
     </header>
@@ -16,37 +16,28 @@
         <section id="calculadora">
             <div id="display">
                 <label for="input-display">
-                    <input type="number" name="display" id="input-display" autofocus>
+                    <input type="number" name="display" id="input-display" size="8" autofocus>
                 </label>
             </div>
             <div id="buttons">
-                <div id="first-row">
-                    <button class="btn-big" accesskey="&#8">&ShortLeftArrow;</button>
-                    <button class="btn-small math" accesskey="%">%</button>
-                    <button class="btn-small math" accesskey="/">&divide</button>
-                </div>
-                <div id="second-row">
-                    <button class="btn-small number" accesskey="7">7</button>
-                    <button class="btn-small number" accesskey="8">8</button>
-                    <button class="btn-small number" accesskey="9">9</button>
-                    <button class="btn-small math" accesskey="*">x</button>
-                </div>
-                <div id="third-row">
-                    <button class="btn-small number" accesskey="4">4</button>
-                    <button class="btn-small number" accesskey="5">5</button>
-                    <button class="btn-small number" accesskey="6">6</button>
-                    <button class="btn-small math" accesskey="-">-</button>
-                </div>
-                <div id="fourth-row">
-                    <button class="btn-small number" accesskey="1">1</button>
-                    <button class="btn-small number" accesskey="2">2</button>
-                    <button class="btn-small number" accesskey="3">3</button>
-                    <button class="btn-small math" accesskey="+">+</button>
-                </div>
-                <div id="fifth-row">
-                    <button class="btn-big number" accesskey="0">0</button>
-                    <button class="btn-small number" accesskey=",">.</button>
-                    <button class="btn-small math" accesskey="&NewLine;">=</button>
+                <button class="btn-big" accesskey="&#8">&ShortLeftArrow;</button>
+                <button class="btn-small math" accesskey="%">%</button>
+                <button class="btn-small math" accesskey="/">&divide</button>
+                <button class="btn-small number" accesskey="7">7</button>
+                <button class="btn-small number" accesskey="8">8</button>
+                <button class="btn-small number" accesskey="9">9</button>
+                <button class="btn-small math" accesskey="*">&times</button>
+                <button class="btn-small number" accesskey="4">4</button>
+                <button class="btn-small number" accesskey="5">5</button>
+                <button class="btn-small number" accesskey="6">6</button>
+                <button class="btn-small math" accesskey="-">-</button>
+                <button class="btn-small number" accesskey="1">1</button>
+                <button class="btn-small number" accesskey="2">2</button>
+                <button class="btn-small number" accesskey="3">3</button>
+                <button class="btn-small math" accesskey="+">+</button>
+                <button class="btn-big number" accesskey="0">0</button>
+                <button class="btn-small number" accesskey=",">.</button>
+                <button class="btn-small math" accesskey="&NewLine;">=</button>
                 </div>
             </div>
         </section>
