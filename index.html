@@ -4,29 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./estilos/styles.css">
+    <link rel="stylesheet" href="./estilos/media-queries.css">
 </head>
 <body>
     <header>
-        <h1>Calculadora Básica</h1>
+        <h1>Calculadora</h1>
     </header>
     <main>
-        <section class="calculadora">
-            <div id="idDis">
-                <p>
-                    <input type="number" name="num" id="idNum" placeholder="0">
-                </p>
+        <section id="calculadora">
+            <div id="display">
+                <label for="input-display">
+                    <input type="number" name="display" id="input-display" autofocus>
+                </label>
             </div>
-            <div id="idBtn">
-                <input class="btn" type="button" value="+" onclick="operador()">
-                <input class="btn" type="button" value="-" onclick="operador()">
-                <input class="btn" type="button" value="x" onclick="operador()">
-                <input class="btn" type="button" value="/" onclick="operador()">
-                <input class="btn" type="button" value="=" onclick="operador()">
+            <div id="buttons">
+                <div id="first-row">
+                    <button class="btn-big" accesskey="&#8">&ShortLeftArrow;</button>
+                    <button class="btn-small math" accesskey="%">%</button>
+                    <button class="btn-small math" accesskey="/">&divide</button>
+                </div>
+                <div id="second-row">
+                    <button class="btn-small number" accesskey="7">7</button>
+                    <button class="btn-small number" accesskey="8">8</button>
+                    <button class="btn-small number" accesskey="9">9</button>
+                    <button class="btn-small math" accesskey="*">x</button>
+                </div>
+                <div id="third-row">
+                    <button class="btn-small number" accesskey="4">4</button>
+                    <button class="btn-small number" accesskey="5">5</button>
+                    <button class="btn-small number" accesskey="6">6</button>
+                    <button class="btn-small math" accesskey="-">-</button>
+                </div>
+                <div id="fourth-row">
+                    <button class="btn-small number" accesskey="1">1</button>
+                    <button class="btn-small number" accesskey="2">2</button>
+                    <button class="btn-small number" accesskey="3">3</button>
+                    <button class="btn-small math" accesskey="+">+</button>
+                </div>
+                <div id="fifth-row">
+                    <button class="btn-big number" accesskey="0">0</button>
+                    <button class="btn-small number" accesskey=",">.</button>
+                    <button class="btn-small math" accesskey="&NewLine;">=</button>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>Calculadora desenvolvida por Willen Thiago</p>
+        <p id="dev">Calculadora desenvolvida por Willen Thiago</p>
+        <a id="git" href="https://github.com/willenthiago" target="_blank"><img class="bi bi-github" src="" alt=""></a>
+        <a href="https://www.linkedin.com/in/willen-thiago-campos-de-jesus-604793118/" target="_blank"><img src="" alt="" class="bi bi-linkedin"></a>
     </footer>
     <script src="js/script.js"></script>
 </body>
