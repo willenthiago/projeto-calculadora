@@ -65,7 +65,7 @@ header{
     background-color: #ccc;
     border: 1px solid #00000080;
 }
-.number{
+.number, .decimal{
     background-color: #555;
     color: #ffffffd2;
 }
